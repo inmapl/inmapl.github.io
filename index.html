@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inma Pérez — Comunicación y Marketing</title>
+  <meta name="description" content="Inma Pérez: comunicación corporativa y marketing digital. Experiencia en agencia, empresa y tercer sector.">
+
+  <!-- Favicon e iconos -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Tarjeta social (Open Graph / Twitter) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Inma Pérez — Comunicación y Marketing">
+  <meta property="og:description" content="Comunicación corporativa y marketing digital. Experiencia en agencia, empresa y tercer sector.">
+  <meta property="og:url" content="https://inmapl.github.io/">
+  <meta property="og:image" content="https://inmapl.github.io/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fija el tema antes de pintar para evitar parpadeo -->
+  <script>
+    document.documentElement.dataset.theme =
+      localStorage.getItem("cv-theme") || "light";
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-bar" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#inicio" class="nav-logo">IP<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#areas">Áreas</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+      <button class="icon-toggle" id="themeToggle" aria-label="Cambiar entre tema claro y oscuro" title="Tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icon-toggle sound-toggle" id="soundToggle" aria-label="Activar o silenciar sonidos" title="Sonido">
+        <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+        <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <header class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-photo">
+        <img src="foto-avatar.jpg" alt="Retrato de Inma Pérez" width="400" height="400">
+      </div>
+      <p class="hero-kicker">Comunicación corporativa · Marketing digital</p>
+      <h1 class="hero-name">Inma <em>Pérez</em></h1>
+      <p class="hero-tagline">
+        Gestión de comunicación, campañas y proyectos digitales.
+        Experiencia en agencia, empresa y tercer sector.
+      </p>
+      <div class="hero-actions">
+        <a href="#areas" class="btn btn-primary">Áreas de trabajo</a>
+        <a href="CV1.pdf" class="btn btn-ghost" download>Descargar CV (PDF)</a>
+      </div>
+    </div>
+
+    <a href="#areas" class="scroll-hint" aria-label="Bajar a áreas de trabajo">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+    <!-- ═══════════ ÁREAS DE TRABAJO ═══════════ -->
+    <section id="areas" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>Áreas de trabajo</h2>
+      </div>
+
+      <div class="areas-grid">
+
+        <article class="area-card reveal">
+          <div class="area-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+          </div>
+          <h3>Comunicación corporativa e institucional</h3>
+          <p>Planes de comunicación, difusión institucional y coordinación con públicos internos y externos.</p>
+          <div class="area-tags"><span>Planes de comunicación</span><span>Comunicación interna</span></div>
+        </article>
+
+        <article class="area-card reveal">
+          <div class="area-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+          </div>
+          <h3>Marketing digital</h3>
+          <p>Campañas SEO y SEM en Google y Amazon Ads, orientadas a captación, conversión y posicionamiento.</p>
+          <div class="area-tags"><span>SEO</span><span>SEM</span><span>Amazon Ads</span></div>
+        </article>
+
+        <article class="area-card reveal">
+          <div class="area-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3>Contenidos</h3>
+          <p>Redacción y gestión de contenidos para web y canales digitales, con base en formación periodística.</p>
+          <div class="area-tags"><span>Redacción</span><span>Gestión web</span></div>
+        </article>
+
+        <article class="area-card reveal">
+          <div class="area-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M9 20V10"/></svg>
+          </div>
+          <h3>Gestión de proyectos y clientes</h3>
+          <p>Coordinación entre equipos multidisciplinares, seguimiento de proyectos digitales y elaboración de informes.</p>
+          <div class="area-tags"><span>Coordinación</span><span>Informes</span></div>
+        </article>
+
+        <article class="area-card reveal">
+          <div class="area-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8L3 4z"/></svg>
+          </div>
+          <h3>CRM y automatización</h3>
+          <p>Gestión de leads, CRM e inbound marketing. Certificaciones de HubSpot Academy y máster en marketing automation.</p>
+          <div class="area-tags"><span>HubSpot</span><span>Inbound</span><span>Automation</span></div>
+        </article>
+
+        <article class="area-card reveal">
+          <div class="area-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg>
+          </div>
+          <h3>Proyectos con financiación pública</h3>
+          <p>Documentación, seguimiento y justificación de actividades en programas europeos, subvenciones y Kit Digital.</p>
+          <div class="area-tags"><span>Fondos europeos</span><span>Kit Digital</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════ PERFIL / DIFERENCIALES ═══════════ -->
+    <section id="perfil" class="section section-alt">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>Perfil</h2>
+      </div>
+
+      <div class="diff-list">
+        <div class="diff-item reveal">
+          <span class="diff-num">a</span>
+          <div>
+            <h3>Estrategia y producción en un mismo perfil</h3>
+            <p>Formación en periodismo y máster en marketing automation: cubro tanto la planificación de campañas como la elaboración del contenido.</p>
+          </div>
+        </div>
+        <div class="diff-item reveal">
+          <span class="diff-num">b</span>
+          <div>
+            <h3>Experiencia en entornos distintos</h3>
+            <p>Agencia, empresa, tercer sector y programas públicos. Adaptación a estructuras, procesos y ritmos de trabajo diferentes.</p>
+          </div>
+        </div>
+        <div class="diff-item reveal">
+          <span class="diff-num">c</span>
+          <div>
+            <h3>Procesos formales y documentación</h3>
+            <p>Trabajo con justificación de proyectos financiados (fondos europeos, subvenciones, Kit Digital): trazabilidad, plazos y requisitos administrativos.</p>
+          </div>
+        </div>
+        <div class="diff-item reveal">
+          <span class="diff-num">d</span>
+          <div>
+            <h3>Formación interna</h3>
+            <p>Máster en Formación del Profesorado y prácticas docentes: preparación e impartición de formación para equipos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">años de experiencia</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="6">0</span>
+          <span class="stat-label">áreas de trabajo</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">titulaciones universitarias</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ TRAYECTORIA ═══════════ -->
+    <section id="trayectoria" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>Trayectoria</h2>
+      </div>
+
+      <div class="xp-list">
+        <div class="xp-row reveal">
+          <span class="xp-date">2025 — 2026</span>
+          <div class="xp-info">
+            <h3>Técnico de Comunicación</h3>
+            <p>Asociación AMICA · Torrelavega</p>
+          </div>
+          <span class="xp-area">Comunicación institucional</span>
+        </div>
+        <div class="xp-row reveal">
+          <span class="xp-date">2024</span>
+          <div class="xp-info">
+            <h3>Técnico de Comunicación y Marketing</h3>
+            <p>Ms Cloud · Remoto</p>
+          </div>
+          <span class="xp-area">SEO · SEM · Contenidos</span>
+        </div>
+        <div class="xp-row reveal">
+          <span class="xp-date">2023 — 2024</span>
+          <div class="xp-info">
+            <h3>Responsable de Comunicación</h3>
+            <p>El Ayudante · Santander</p>
+          </div>
+          <span class="xp-area">Kit Digital · Estrategia</span>
+        </div>
+        <div class="xp-row reveal">
+          <span class="xp-date">2022 — 2023</span>
+          <div class="xp-info">
+            <h3>Técnico de Marketing Digital</h3>
+            <p>Camaltec / Spiral Group y Overant</p>
+          </div>
+          <span class="xp-area">Amazon Ads · CRM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FORMACIÓN ═══════════ -->
+    <section id="formacion" class="section section-alt">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>Formación</h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-card reveal featured">
+          <span class="edu-year">2022 — 2023</span>
+          <h3>Máster en Marketing Automation &amp; Growth Hacking</h3>
+          <p>Automatización, CRM y captación</p>
+        </article>
+        <article class="edu-card reveal">
+          <span class="edu-year">2018 — 2022</span>
+          <h3>Grado en Periodismo</h3>
+          <p>Universidad de Valladolid</p>
+        </article>
+        <article class="edu-card reveal">
+          <span class="edu-year">2025 — 2026</span>
+          <h3>Máster en Formación del Profesorado</h3>
+          <p>Universidad Isabel I · capacidad de formación interna</p>
+        </article>
+      </div>
+
+      <div class="edu-extra reveal">
+        <h3>Formación complementaria e idiomas</h3>
+        <ul>
+          <li>Certificaciones en CRM e inbound marketing — HubSpot Academy</li>
+          <li>Habilidades profesionales y gestión del cambio digital — IEBS Business School (2023)</li>
+          <li>Inglés intermedio · Francés básico</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACTO ═══════════ -->
+    <section id="contacto" class="section contact">
+      <div class="reveal">
+        <p class="contact-kicker">Contacto</p>
+        <h2 class="contact-title">Hablemos<em>.</em></h2>
+        <a class="contact-mail" id="revealMail" href="#" data-revealed="no">Mostrar email ✉</a>
+        <p class="contact-phone"><a id="revealPhone" href="#" data-revealed="no">Mostrar teléfono ☎</a></p>
+        <!-- TODO: activar cuando tengamos la URL del perfil
+        <p class="contact-linkedin"><a href="https://www.linkedin.com/in/PENDIENTE" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Inma Pérez · Los Corrales de Buelna, Cantabria</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
